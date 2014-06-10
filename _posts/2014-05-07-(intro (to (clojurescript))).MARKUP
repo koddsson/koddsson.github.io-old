@@ -1,0 +1,13 @@
+---
+layout: talk
+tag : talks
+---
+
+<p>A talk I did at a Javascript Iceland User Group meetup. I'm really interested in
+Clojure (and thus ClojureScript) but am not exposed to it all that much.</p>
+<p>I don't do a whole lot of talks but am trying to change that and learned a
+lot doing this one.</p>
+
+<script async class="speakerdeck-embed"
+data-id="fd179710d31e01311e317a88ebacabb8" data-ratio="1.77777777777778"
+src="//speakerdeck.com/assets/embed.js"></script>

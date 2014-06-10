@@ -52,7 +52,8 @@ a:visited { color: #205caa; }
 .site-title:visited {
   display: block;
   color: #333;
-  font-size: 26px;
+  font-size: 50px;
+  margin-top: 75px;
   letter-spacing: -1px;
   float: left;
   line-height: 56px;
@@ -402,4 +403,26 @@ a:visited { color: #205caa; }
     width: auto;
     margin: 0 0 15px; }
 
+}
+
+/* Custom */
+div.profile_crop {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  overflow: hidden;
+  border: 10px solid goldenrod;
+  display: inline-block;
+  float: left;
+  margin: 10px 10px 10px 0;
+}
+
+div.profile_crop img.profile {
+  width: 200px;
+  margin: 0 0 0 -45px;
+}
+
+ul li {
+  list-style: none;
+  margin-left: 20px;
 }
