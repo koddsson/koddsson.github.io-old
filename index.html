@@ -3,8 +3,14 @@
   <head>
     <title>koddsson.com</title>
     <meta charset="utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
+      html, body {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+      }
       body {
         font-size: 2em;
         font-family: 'Lato', sans-serif;
@@ -23,6 +29,18 @@
       }
       a {
         text-decoration: none;
+      }
+
+      @media (max-width: 568px) {
+        body {
+          font-size: 1.4em;
+        }
+        .container {
+          padding: 0 10px;
+        }
+        .profile_pic {
+          width: 70%;
+        }
       }
     </style>
 
@@ -55,6 +73,9 @@
         <a target='_blank' href='https://twitter.com/koddsson/'>twitter</a>, 
         <a target='_blank' href='https://github.com/koddsson/'>github</a>,
         <a target='_blank' href='https://keybase.io/koddsson/'>keybase</a>.
+      </p>
+      <p style="text-align: center">
+        👋👋👋
       </p>
     </div>
   </body>
