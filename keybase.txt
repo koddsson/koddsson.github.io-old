@@ -1,0 +1,74 @@
+==================================================================
+https://keybase.io/koddsson
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://koddsson.com
+  * I am koddsson (https://keybase.io/koddsson) on keybase.
+  * I have a public key with fingerprint 2696 7637 2476 4B0B F2B7  19D4 595B 7AC1 BC27 37C6
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101962018f644c03402a101b048d54b5b3a54cd349bc0d05a5ba136fe593244b4ed0a",
+            "fingerprint": "2696763724764b0bf2b719d4595b7ac1bc2737c6",
+            "host": "keybase.io",
+            "key_id": "595b7ac1bc2737c6",
+            "kid": "0101962018f644c03402a101b048d54b5b3a54cd349bc0d05a5ba136fe593244b4ed0a",
+            "uid": "ae393b120c856e4390d84973f0f22900",
+            "username": "koddsson"
+        },
+        "service": {
+            "hostname": "koddsson.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1479660405,
+    "expire_in": 157680000,
+    "prev": "5f6940bbbad267c3a760c6de84633b75a34f15b9b19aa35181a916fb903cbebc",
+    "seqno": 30,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.58
+Comment: https://keybase.io/crypto
+
+yMNAAnicrVJtUFRVGF4QNsJAflQEuuhcZcMCPfd7L1MgkyiM2tT4RbWy3nM/8C6w
+X3eBEJcxR4EgpmwiMUZoG1pjIMaJQSigmVUEjBaXIMORwdgwKDUUQ42ZoHuZ+tP0
+s/PnzHnO8zzv877z9kas0IQHvfbGYW/3s3Rf0KC3tkCThY4UlCDQyhcjySVIrrB8
+CXm8IDtNuRKPJCMABShDYQA1iBRBcAAnAMYqGASEgScJSEKcJQmOxwkGcoAHJEtC
+FsUpUSAZHCMISAg8YJFERJQsOYLD5pAsTsUWoxiKpnAaI2iKgACKGKRRhidIhoQ0
+y6GQw2ic5ihFeMgqqwolHGRlYZNkVTDlYVqO9x/8/zl3wbIdK+AMDlEMcAaSEgic
+AbyBYGhcBCKGMQCoRFlwWNh8Qc1q5XlZtloQVyKioIUSJ6iDVTv5F2MTZ81XtDaH
+1WnlrHnKzyGn0yYnq0pnsU2lFgnQ9LeJCUoWXpmjoigUHLKkVEhGFSbnlFRXlKAZ
+igIEIBMR4U2b5BBMksogacoAlKPWEQrVqYkUQwAIIctjFM3hLE0BjuIFA0HhOKRJ
+FidElIQMRBmWxUnUgLIMSomQATgHBcghalt2ixVJxhVTJ5ujeMpSjoV1FjgExHXB
+awzRBIVrtKHB6oJpwh+P+mftIiNWLRVMFV5Zqdub0/WlndkDpkvzHwsbvVCVHTs5
+kdPoL0v5LUpf7pt2Gpu6OxoetN9c3BlsHqwVfUdmd/n9+0P0a6sDTx5dqjwdUrm9
+a+RK6pnOky+GHnXp73SmZ3d5R7fW2v3Hh1O5ksLF+xkXB06eEOUobP0Nc6U2uMId
+Pfx898azr0sp1aMPjfiCTh833zE+F39131LteY9rKC+t5lbVmqT51ec9VXX1v+jZ
+TOF2z6njtx9tPztY11Jv6Y0ZKc+fW/d+wrGYMy/s9o0vJcTETiRqV2UsDNx860HL
+pWa9lBQoku+l6Vyn+C9C6/rBNuzuxvL40rEdUz27PyTfzk4T3b+yhxdP9O1o04a0
+HjCO571069Hl9oPaS4GLL+fOBN5bQzf8ntn3dcS6op92BapKSjvNK70p/jvVW3tc
+U7EdLQ1lQ9/7Pt1bMql155vmKhOfNq6+asIzazxdmde/1V4ezv3hYG+kfVvlzJGK
+kaRm7MCWZ05HE76MZkebTaND4gxPjNk3fGb/5LmG6NmAvsxkLh9rvJaaVR82/XF6
+6/W2Gz//WHcsYdbk3tM+Y/580v/dioXRlrWbu9PL+pB43VzFTOt4U8U7Q0meDybj
+3Ods8+s/aup3T8qeV/ehWXd1efqvNtf4Jp6aW3q30T0ro+c8A3+kOF55qO3fsD+y
+s7vY9I352k6N/GfYlr8A3CXKSw==
+=NpZK
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/koddsson
+
+==================================================================
