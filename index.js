@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <h1>${name}</h1>
               <ul>
                 ${ingredients
-                  .map(({ name, amount }) => `<li>${amount} - ${name}</li>`)
+                  .map(({ name, amount }) => `<li>${amount} ${name}</li>`)
                   .join('')
                 }
               </ul>
