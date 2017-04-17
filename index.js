@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.json())
         .then(({ name, ingredients, method }) => {
           main.innerHTML = `
-            <div>
+            <div class="recipe">
               <h1>${name}</h1>
               <ul>
                 ${ingredients
@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         link.style.display = ''
       })
       event.target.classList.add('active')
+      $('.sidebar.menu').sidebar('hide')
     })
   })
 
@@ -47,5 +48,9 @@ document.addEventListener('DOMContentLoaded', () => {
         link.style.display = ''
       }
     })
+  })
+
+  document.querySelector('.top.menu').addEventListener('click', () => {
+    $('.sidebar.menu').sidebar('toggle')
   })
 })

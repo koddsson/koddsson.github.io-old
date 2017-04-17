@@ -2,7 +2,9 @@
 <html>
   <head>
     <title>My recipies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
+    <link rel="stylesheet" href="index.css">
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -13,28 +15,28 @@
     <script src="index.js"></script>
   </head>
   <body>
-    <div class="ui grid">
-      <div class="four wide column">
-        <div class="ui left fixed vertical menu">
-          <div class="ui category search item">
-            <div class="ui transparent icon input">
-              <input class="prompt" type="text" placeholder="Search...">
-              <i class="search link icon"></i>
-            </div>
-          </div>
-          <a class="item" data-source="pizza-dough.json">Simple pizza dough</a>
-          <a class="item" data-source="lasagna.json">Lasagna</a>
-          <a class="item" data-source="peanutButterOatmealBars.json">
-            Peanut butter oatmeal bars
-          </a>
-          <a class="item" data-source="overnightOatmeal.json">
-            Overnight oatmeal
-          </a>
+    <div class="ui top attached menu">
+      <a class="item">
+        <i class="sidebar icon"></i>
+        Overview
+      </a>
+    </div>
+    <div class="ui left vertical menu sidebar visible">
+      <div class="ui category search item">
+        <div class="ui transparent icon input">
+          <input class="prompt" type="text" placeholder="Search...">
+          <i class="search link icon"></i>
         </div>
       </div>
-      <div class="twelve wide column main">
-        Welcome!
-      </div>
+      <a class="item" data-source="pizza-dough.json">Simple pizza dough</a>
+      <a class="item" data-source="lasagna.json">Lasagna</a>
+      <a class="item" data-source="peanutButterOatmealBars.json">
+        Peanut butter oatmeal bars
+      </a>
+      <a class="item" data-source="overnightOatmeal.json">
+        Overnight oatmeal
+      </a>
     </div>
+    <div class="main pusher"></div>
   </body>
 </html>
