@@ -10,3 +10,4 @@ Collection of some of the stuff I cook at home and think is delicious.
 - Fix name (it's recipes, not recipies)
 - Set up a JSON schema
 - Migrate old recipes to correspond to the schema
+- Manually import recipes from HelloFresh
