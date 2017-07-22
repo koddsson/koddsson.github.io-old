@@ -1,0 +1,23 @@
+{
+  "name": "koddsson.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koddsson/koddsson.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/koddsson/koddsson.github.io/issues"
+  },
+  "homepage": "https://github.com/koddsson/koddsson.github.io#readme",
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "prettier-eslint": "^6.4.2"
+  }
+}

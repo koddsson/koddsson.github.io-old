@@ -1,10 +1,25 @@
 {
+    "$schema": ".schema.json",
     "name": "Peanut butter Oatmeal Bars",
-    "type": "Snack",
+    "tags": [
+        "Snack"
+    ],
     "ingredients": [
-        {"name": "Rolled oats", "amount": 3, "measurement": "cup"},
-        {"name": "Honey", "amount": 0.5, "measurement": "cup"},
-        {"name": "Peanut butter", "amount": 1, "measurement": "cup"}
+        {
+            "name": "Rolled oats",
+            "amount": 3,
+            "measurement": "cup"
+        },
+        {
+            "name": "Honey",
+            "amount": 0.5,
+            "measurement": "cup"
+        },
+        {
+            "name": "Peanut butter",
+            "amount": 1,
+            "measurement": "cup"
+        }
     ],
     "method": [
         "Heat up peanut butter and honey in a pot and mix thoroughly",
