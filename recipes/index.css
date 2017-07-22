@@ -119,6 +119,7 @@ ul {
 #toggleButton {
   background-color: transparent;
   border: 0;
+  margin-right: 5px;
 }
 
 /* utils */
