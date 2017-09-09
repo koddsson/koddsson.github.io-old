@@ -1,0 +1,6 @@
+#!/bin/bash
+
+node make-link.js $@
+git add "to/$1.html"
+git commit -m "add link: $1"
+git push origin master
