@@ -19,6 +19,11 @@
       "name": "Pizza Dough",
       "url": "pizzaDough.json",
       "emoji": "🍕"
+    },
+    {
+      "name": "Erikas Yakisoba",
+      "url": "yakisoba.json",
+      "emoji": "🍜"
     }
   ]
 }
