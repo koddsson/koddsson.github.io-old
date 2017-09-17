@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const notableDates = {
     '1989-01-18': 'Born! 🎉',
-    '2007-01-18': '18 years old! 🎉'
+    '2007-01-18': '18 years old! 🎉',
+    '2012-09-15': 'Met Mekkin 💖',
   };
 
   let dateIndex = birthDay;
