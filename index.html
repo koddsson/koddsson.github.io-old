@@ -2,14 +2,24 @@
 <html version='9'>
   <head>
     <title>koddsson.com</title>
-    <meta charset="utf-8" /> 
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="index.css" rel="stylesheet">
 
-    <style>
-    </style>
-
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }, function(err) {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+          });
+        });
+      }
+    </script>
   </head>
   <body>
     <div class='container'>
@@ -25,7 +35,7 @@
       </p>
       <p>
         Finally you can find my <a href='http://registry.jsonresume.org/koddsson' target='_blank'>cv</a> here or if you want to talk you can reach me at the following places:
-        <a target='_blank' href='https://twitter.com/koddsson/'>twitter</a>, 
+        <a target='_blank' href='https://twitter.com/koddsson/'>twitter</a>,
         <a target='_blank' href='https://github.com/koddsson/'>github</a>,
         <a target='_blank' href='https://keybase.io/koddsson/'>keybase</a>.
       </p>
