@@ -19,6 +19,10 @@ html, body {
 
 body {
   font-family: 'Fira Sans', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
 }
 
 .container {
