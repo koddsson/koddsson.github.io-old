@@ -5,6 +5,10 @@
   --text-color: #191919;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   width: 100%;
   padding: 0;
@@ -18,13 +22,60 @@ body {
 }
 
 .container {
-  padding: 0 4em;
+  display: flex;
+  height: 100%;
+}
+
+.sidebar {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.sidebar h1 {
+  margin: 0;
+}
+
+.sidebar .section {
+  border-bottom: 1px solid #7b7b7b;
+  padding: 10px 0;
+}
+
+.sidebar a svg {
+  height: 24px;
+  width: 24px;
+}
+
+.sidebar .icons {
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.badge {
+  text-transform: uppercase;
+  color: white;
+  background-color: #0366d6;
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+
+.content {
+  width: 100%;
+  padding: 0 1em;
+}
+
+dt {
+  font-size: 1.3em;
+}
+
+dd {
+  margin: 10px 10px 10px 0;
 }
 
 .profile_pic {
   border-radius: 50%;
   width: 10em;
-  margin: 2em auto;
   display: block;
 }
 
@@ -35,13 +86,18 @@ a {
 }
 
 @media (max-width: 568px) {
-  body {
-    font-size: 1.4em;
-  }
   .container {
-    padding: 0 10px;
+    flex-direction: column;
+    padding: 1em;
   }
+
+  .sidebar {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
   .profile_pic {
-    width: 70%;
+    margin: auto;
   }
 }
