@@ -1,13 +1,22 @@
 <!doctype html>
-<script src="https://rawgit.com/mozilla-comm/ical.js/master/build/ical.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const datetime = document.querySelector('.datetime');
+<head>
+  <script src="https://rawgit.com/mozilla-comm/ical.js/master/build/ical.js"></script>
+  <script>
+    const calUrl = 'https://calendar.google.com/calendar/ical/p%23weather%40group.v.calendar.google.com/public/basic.ics'
+    fetch(calUrl)
+      .then(response => response.text())
+      .then(text => console.log(text));
 
-    datetime.innerText = new Date();
-    setInterval(function() {
+    document.addEventListener('DOMContentLoaded', function() {
+      const datetime = document.querySelector('.datetime');
+
       datetime.innerText = new Date();
-    }, 1000);
-  });
-</script>
-<h1 class="datetime"></h1>
+      setInterval(function() {
+        datetime.innerText = new Date();
+      }, 1000);
+    });
+  </script>
+</head>
+<body>
+  <h1 class="datetime"></h1>
+</body>
