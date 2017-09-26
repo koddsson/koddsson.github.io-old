@@ -5,7 +5,13 @@
     const calUrl = 'https://calendar.google.com/calendar/ical/p%23weather%40group.v.calendar.google.com/public/basic.ics'
     fetch(calUrl)
       .then(response => response.text())
-      .then(text => console.log(text));
+      .then(text => {
+        const jcalData = ICAL.parse(text);
+        const vcalendar = new ICAL.Component(jcalData);
+        const vevent = vcalendar.getFirstSubcomponent('vevent');
+        const summary = vevent.getFirstPropertyValue('summary');
+        console.log('Summary: ' + summary);
+      });
 
     document.addEventListener('DOMContentLoaded', function() {
       const datetime = document.querySelector('.datetime');
