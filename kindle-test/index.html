@@ -1,10 +1,12 @@
 <!doctype html>
 <script>
-  const datetime = document.querySelector('.datetime');
-  
-  datetime.innerText = new Date();
-  setInterval(function() {
+  document.addEventListener('DOMContentLoaded', () => {
+    const datetime = document.querySelector('.datetime');
+
     datetime.innerText = new Date();
-  }, 1000);
+    setInterval(function() {
+      datetime.innerText = new Date();
+    }, 1000);
+  });
 </script>
 <h1 class="datetime"></h1>
