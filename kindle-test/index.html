@@ -2,8 +2,9 @@
 <head>
   <script src="https://rawgit.com/mozilla-comm/ical.js/master/build/ical.js"></script>
   <script>
-    const calUrl = 'https://calendar.google.com/calendar/ical/p%23weather%40group.v.calendar.google.com/public/basic.ics'
-    fetch(calUrl)
+    const corsAnywhereUrl = 'https://cors-anywhere.herokuapp.com/';
+    const calUrl = 'calendar.google.com/calendar/ical/p%23weather%40group.v.calendar.google.com/public/basic.ics'
+    fetch(corsAnywhereUrl + calUrl)
       .then(response => response.text())
       .then(text => {
         const jcalData = ICAL.parse(text);
