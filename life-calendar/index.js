@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     '1989-01-18': 'Born! 🎉',
     '2007-01-18': '18 years old! 🎉',
     '2012-09-15': 'Met Mekkin 💖',
+    '2017-01-12': 'Moved to London 🇬'
   };
 
   let dateIndex = birthDay;
