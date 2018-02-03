@@ -31,10 +31,11 @@ body {
 }
 
 .sidebar {
-  width: 200px;
+  padding: 1em;
   display: flex;
   flex-direction: column;
-  padding: 1em;
+  flex: 0;
+  flex-basis: 250px;
 }
 
 .sidebar h1 {
@@ -43,7 +44,8 @@ body {
 
 .sidebar .section {
   border-bottom: 1px solid #7b7b7b;
-  padding: 10px 0;
+  padding-bottom: 1.5em;
+  padding-top: 1em;
 }
 
 .sidebar a svg {
@@ -53,7 +55,7 @@ body {
 
 .sidebar .icons {
   text-align: center;
-  margin-top: 0.5em;
+  margin-top: auto;
 }
 
 .badge {
@@ -99,6 +101,11 @@ a {
     display: block;
     width: 100%;
     text-align: center;
+  }
+
+  .sidebar .icons {
+    text-align: center;
+    padding-top: 1.5em;
   }
 
   .profile_pic {
