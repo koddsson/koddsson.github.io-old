@@ -12,7 +12,7 @@ var urlsToCache = [
   '/recipes/index.css',
   '/recipes/index.html',
   '/recipes/index.js',
-  '/recipes/index.json',
+  '/recipes/recipes/index.json',
   '/recipes/recipes/lasagna.json',
   '/recipes/recipes/overnightOatmeal.json',
   '/recipes/recipes/peanutbutterOatmealBars.json',
