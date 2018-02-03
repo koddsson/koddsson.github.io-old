@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
   const lifeCalendar = document.querySelector('.life-calendar');
 
-  const birthDay = moment('1989-01-18');
+  const birthDay = window.moment('1989-01-18');
   const whenIllBeNinety = birthDay.clone().add(90, 'years');
-  const daysSinceBirthday = moment().diff(birthDay, 'days');
+  const daysSinceBirthday = window.moment().diff(birthDay, 'days');
 
   const notableDates = {
     '1989-01-18': 'Born! 🎉',
