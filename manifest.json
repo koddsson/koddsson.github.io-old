@@ -2,7 +2,8 @@
   "name": "koddsson",
   "author": "Kristján Oddsson",
   "theme_color": "#ffffff",
-  "icons": {
-    "48": "me.jpg"
-  }
+  "icons": [{
+    "sizes": "192x192",
+    "src": "me192.jpg"
+  }]
 }
