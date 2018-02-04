@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "http-server -a localhost -o",
-    "test": "npm run test:recipes",
+    "lint": "eslint --fix .",
+    "test": "npm run lint && npm run test:recipes",
     "test:recipes": "jsonlint ./recipes/recipes/*.json --validate recipes/schema.json --quiet"
   },
   "repository": {
