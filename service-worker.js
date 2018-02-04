@@ -1,4 +1,4 @@
-var CACHE_NAME = 'koddsson-com-service-worker-v1';
+var CACHE_NAME = 'koddsson-com-service-worker-v2';
 var urlsToCache = [
   '/404.html',
   '/index.css',
