@@ -11,7 +11,7 @@
     "ingredients": [
         {
             "name": "Firm Tofu",
-            "amount": "280",
+            "amount": 280,
             "measurement": "gr.",
             "url": "https://www.ocado.com/webshop/product/The-Tofoo-Co-Naked-Organic-Extra-Firm-Tofu/349669011"
         },

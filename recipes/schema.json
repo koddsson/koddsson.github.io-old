@@ -1,6 +1,5 @@
 {
   "type": "object",
-  "$schema": "http://json-schema.org/draft-03/hyper-schema",
   "title": "Recipe",
   "properties": {
     "$schema": {
@@ -43,6 +42,13 @@
     },
     "method": {
       "description": "How you make this food item",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "variants": {
+      "description": "Different takes on how to prepare this item",
       "type": "array",
       "items": {
         "type": "string"
