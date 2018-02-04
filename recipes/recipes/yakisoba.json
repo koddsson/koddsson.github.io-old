@@ -1,5 +1,5 @@
 {
-    "$schema": ".schema.json",
+    "$schema": "../schema.json",
     "name": "Erikas Yakisoba",
     "tags": [
         "Lunch",
@@ -10,9 +10,10 @@
     "description": "Yakisoba (literally fried noodles) is basically a stir fry dish that everybody makes at home in japan for comfort food, or buys at convenience stores or at late-night food stands. if you’re really into carb on carb action, you can also put yakisoba between a baguette or hot dog bun, and it’s called yakisoba pan (yakisoba bread), which is amazing if you’re stoned or hungover. ",
     "ingredients": [
         {
-            "name": "Tofu",
-            "amount": 1,
-            "measurement": "???"
+            "name": "Firm Tofu",
+            "amount": "280",
+            "measurement": "gr.",
+            "url": "https://www.ocado.com/webshop/product/The-Tofoo-Co-Naked-Organic-Extra-Firm-Tofu/349669011"
         },
         {
             "name": "Veggies",
@@ -21,20 +22,23 @@
         },
         {
             "name": "Noodles",
-            "amount": 1
+            "amount": 1,
+            "measurement": "???"
         },
         {
             "name": "Green onions",
-            "amount": 1
+            "amount": 1,
+            "measurement": "???"
         },
         {
             "name": "Red ginger",
-            "amount": 1
+            "amount": 1,
+            "measurement": "???"
         },
         {
             "name": "Japanese hot mustard",
             "amount": 1,
-            "measturement": "dollup"
+            "measurement": "dollup"
         }
     ],
     "method": [

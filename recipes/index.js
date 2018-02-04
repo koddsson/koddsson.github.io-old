@@ -30,7 +30,7 @@ const closeSidebar = () => {
 
 // Load recipes into local database
 const loadRecipes = () => {
-  return fetch('recipes/index.json')
+  return fetch('index.json')
     .then(res => res.json())
     .then(json => {
       const sidebar = document.querySelector('#sidebar');

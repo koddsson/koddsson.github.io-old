@@ -1,5 +1,5 @@
 {
-    "$schema": ".schema.json",
+    "$schema": "../schema.json",
     "name": "Lasagne",
     "ingredients": [
         {
@@ -9,7 +9,7 @@
         },
         {
             "name": "Lasagna pasta",
-            "amount": "?",
+            "amount": 1,
             "measturement": "?"
         },
         {
@@ -71,7 +71,8 @@
         },
         {
             "name": "Tabasco",
-            "amount": "A splash"
+            "amount": 1,
+            "measurement": "splash"
         },
         {
             "name": "Cheese",
