@@ -1,3 +1,5 @@
+/* eslint-disable some-rule */
+
 var CACHE_NAME = 'koddsson-com-service-worker-v3';
 var urlsToCache = [
   '/404.html',
@@ -38,6 +40,7 @@ self.addEventListener('fetch', function(event) {
   );
 });
 
+/* eslint-disable some-other-rule */
 self.addEventListener('activate', function(event) {
   var cacheWhitelist = [CACHE_NAME];
 
