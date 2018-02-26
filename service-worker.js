@@ -40,6 +40,7 @@ self.addEventListener('fetch', function(event) {
   );
 });
 
+/* eslint-disable some-other-rule */
 self.addEventListener('activate', function(event) {
   var cacheWhitelist = [CACHE_NAME];
 
