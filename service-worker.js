@@ -1,3 +1,5 @@
+/* eslint-disable some-rule */
+
 var CACHE_NAME = 'koddsson-com-service-worker-v3';
 var urlsToCache = [
   '/404.html',
