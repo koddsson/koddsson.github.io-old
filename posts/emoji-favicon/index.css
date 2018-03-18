@@ -32,3 +32,15 @@ pre {
   margin: auto;
   padding: 2em;
 }
+
+header {
+  display: flex;
+}
+
+header > h1 {
+  flex: 1;
+}
+
+header > time {
+  align-self: center;
+}
