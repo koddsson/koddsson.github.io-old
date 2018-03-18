@@ -1,0 +1,34 @@
+body {
+  font-family: Montserrat;
+  color: #333333;
+  line-height: 1.5;
+}
+
+.main {
+  max-width: 860px;
+  margin: auto;
+}
+
+img {
+  margin: 2em auto;
+  max-width: 100%;
+  display: block;
+}
+
+pre, code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27,31,35,0.05);
+  border-radius: 3px;
+  font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+}
+
+pre {
+  padding: 10px;
+}
+
+.twitter-tweet {
+  margin: auto;
+  padding: 2em;
+}
