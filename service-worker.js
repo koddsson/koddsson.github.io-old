@@ -1,27 +1,27 @@
-var CACHE_NAME = 'koddsson-com-service-worker-v3';
+var CACHE_NAME = "koddsson-com-service-worker-v3";
 var urlsToCache = [
-  '/404.html',
-  '/index.css',
-  '/index.html',
-  '/life-calendar/',
-  '/life-calendar/index.css',
-  '/life-calendar/index.js',
-  '/me.jpg',
-  '/places/cities.json',
-  '/places/',
-  '/recipes/index.css',
-  '/recipes/',
-  '/recipes/index.js',
-  '/recipes/index.json',
-  '/recipes/recipes/lasagna.json',
-  '/recipes/recipes/overnightOatmeal.json',
-  '/recipes/recipes/peanutbutterOatmealBars.json',
-  '/recipes/recipes/pizzaDough.json',
-  '/recipes/recipes/yakisoba.json',
-  '/recipes/reset.css'
+  "/404.html",
+  "/index.css",
+  "/index.html",
+  "/life-calendar/",
+  "/life-calendar/index.css",
+  "/life-calendar/index.js",
+  "/me.jpg",
+  "/places/cities.json",
+  "/places/",
+  "/recipes/index.css",
+  "/recipes/",
+  "/recipes/index.js",
+  "/recipes/index.json",
+  "/recipes/recipes/lasagna.json",
+  "/recipes/recipes/overnightOatmeal.json",
+  "/recipes/recipes/peanutbutterOatmealBars.json",
+  "/recipes/recipes/pizzaDough.json",
+  "/recipes/recipes/yakisoba.json",
+  "/recipes/reset.css"
 ];
 
-self.addEventListener('install', function(event) {
+self.addEventListener("install", function(event) {
   // Perform install steps
   event.waitUntil(
     caches.open(CACHE_NAME).then(function(cache) {
@@ -30,7 +30,7 @@ self.addEventListener('install', function(event) {
   );
 });
 
-self.addEventListener('fetch', function(event) {
+self.addEventListener("fetch", function(event) {
   event.respondWith(
     fetch(event.request).catch(() => {
       return caches.match(event.request);
@@ -38,7 +38,7 @@ self.addEventListener('fetch', function(event) {
   );
 });
 
-self.addEventListener('activate', function(event) {
+self.addEventListener("activate", function(event) {
   var cacheWhitelist = [CACHE_NAME];
 
   event.waitUntil(
