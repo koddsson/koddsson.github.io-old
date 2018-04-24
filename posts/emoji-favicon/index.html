@@ -1,23 +1,11 @@
 <!doctype html>
 <html>
   <head>
-   <link rel="icon" type="image/png">
+   <link rel="icon" data-emoji="🛰" type="image/png">
    <title>Emojis as favicons</title>
 
    <link rel="stylesheet" href="index.css">
-   <script async>
-    const canvas = document.createElement('canvas')
-    canvas.height = 64
-    canvas.width = 64
-
-    const ctx = canvas.getContext('2d')
-    ctx.font = '64px serif'
-    ctx.fillText('🛰', 0,64)
-    console.log(canvas.toDataURL())
-
-    const favicon = document.querySelector('link[rel=icon]')
-    favicon.href = canvas.toDataURL()
-   </script>
+   <script async src="../../scripts/emoji-favicon.js"></script>
   </head>
   <body>
     <div class="main">

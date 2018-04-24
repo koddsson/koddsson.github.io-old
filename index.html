@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
 <html version='9'>
   <head>
-    <link rel="icon" type="image/png">
+    <link rel="icon" data-emoji="👨‍💻" type="image/png">
     <title>koddsson.com</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,19 +9,7 @@
     <link href="index.css" rel="stylesheet">
     <link rel="manifest" href="/manifest.json">
 
-    <script async>
-      const canvas = document.createElement('canvas')
-      canvas.height = 64
-      canvas.width = 64
-
-      const ctx = canvas.getContext('2d')
-      ctx.font = '64px serif'
-      ctx.fillText('👨‍💻', 0,64)
-      console.log(canvas.toDataURL())
-
-      const favicon = document.querySelector('link[rel=icon]')
-      favicon.href = canvas.toDataURL()
-    </script>
+    <script async src="scripts/emoji-favicon.js"></script>
 
     <script>
       if ('serviceWorker' in navigator) {
