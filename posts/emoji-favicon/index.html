@@ -42,7 +42,38 @@ favicon.href = canvas.toDataURL()</pre>
       <p>You could even wrap this in a function and dynamically set the favicon.</p>
 
       <p>Let me know if you enjoyed this post on <a href="https://twitter.com/koddsson">twitter</a> 🙌.</p>
+    
+      <div class="flash flash-warn">
+        The following was added to this post on <time datetime="2018-03-24T22:00">March 24th 2018</time>!
+      </div>
 
+      <p>I refined the script a big and it ends up looking like this:</p>
+
+      <pre>
+const favicon = document.querySelector("link[rel=icon]");
+
+if (favicon) {
+  const emoji = favicon.getAttribute("data-emoji");
+
+  if (emoji) {
+    const canvas = document.createElement("canvas");
+    canvas.height = 64;
+    canvas.width = 64;
+
+    const ctx = canvas.getContext("2d");
+    ctx.font = "64px serif";
+    ctx.fillText(emoji, 0, 64);
+
+    favicon.href = canvas.toDataURL();
+  }
+}</pre>
+
+      <p>This change means that I only need to include this script and set the emoji I want as a favicon like so:</p>
+
+      <pre>
+&lt;link rel="icon" data-emoji="🛰" type="image/png"&gt;</pre>
+
+      <p>Exactly what I wanted orginally! 🤙</p>
     </div>
   </body>
 </html>
