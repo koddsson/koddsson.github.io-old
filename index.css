@@ -56,6 +56,7 @@ body {
 .sidebar .icons {
   text-align: center;
   margin-top: auto;
+  padding-top: 1.5em;
 }
 
 .badge {
@@ -105,7 +106,6 @@ a {
 
   .sidebar .icons {
     text-align: center;
-    padding-top: 1.5em;
   }
 
   .profile_pic {
