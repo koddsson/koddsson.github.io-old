@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>koddsson.com notes</title>
+    <description>notes</description>
+    <link>https://koddsson.com</link>
+    <atom:link href="https://koddsson.co/notes.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Sun, 12 Aug 2018 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Test RSS post; please ignore</title>
+      <description>I'm testing some stuff!</description>
+      <pubDate>Sun, 12 Aug 2018 00:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
