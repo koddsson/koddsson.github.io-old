@@ -91,7 +91,7 @@ function createFeed(items) {
   <link>https://koddsson.com</link>
   <atom:link href="https://koddsson.com/notes/feed.xml" rel="self" type="application/rss+xml"/>
   <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
-    ${items.join()}
+    ${items.join("\n")}
   </channel>
 </rss>
 `;
@@ -102,7 +102,7 @@ function createPostsPage(posts) {
   const page = `<html>
   <head></head>
   <body>
-    ${posts.join()}
+    ${posts.join("\n")}
   </body>
 </html>
 `;
