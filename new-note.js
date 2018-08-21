@@ -1,31 +1,22 @@
 const fs = require("fs");
+const { fork, spawn } = require("child_process");
 
 const date = new Date();
-const filename = `./notes/${date.toISOString().split("T")[0]}.md`;
-const title = process.env[2];
+const baseFilename = `./notes/${date.toISOString().split("T")[0]}`;
+let filename = baseFilename;
+let counter = 0;
 
-if (!title) {
-  console.log("Usage: <title>");
-  process.exit(1);
-}
-
-if (fs.existsSync(filename)) {
-  console.log(`${filename} already exists`);
-  process.exit(1);
+while (fs.existsSync(`${filename}.md`)) {
+  filename = `${baseFilename}-${counter}`;
+  counter += 1;
 }
 
 const template = `---
-title: Vegetable season at Noma 🥕
-pubDate: 2018-08-20T20:19:51.843Z
+pubDate: ${date.toISOString()}
 ---
 `;
 
-fs.writeFileSync(filename, template);
+fs.writeFileSync(`${filename}.md`, template);
 
-const child = child_process.spawn("nvim", [filename], {
-  stdio: "inherit"
-});
-
-child.on("exit", function(e, code) {
-  console.log("finished");
-});
+spawn("nvim", [`${filename}.md`], { stdio: "inherit" });
+spawn("node", ["regenerate-notes.js"], { stdio: "inherit" });
