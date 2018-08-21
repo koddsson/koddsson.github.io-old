@@ -7,8 +7,19 @@ const writeFileAsync = promisify(writeFile);
 function htmlTemplate(content) {
   const page = `<html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+      @import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+      body { font-family: 'Fira Sans', sans-serif; }
       .body { margin-bottom: 0.83em; }
+      .timestamp { text-align: right; }
+      .post {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.83em;
+        padding: 0.83em;
+        border: 1px solid gray;
+      }
     </style>
   </head>
   <body>
@@ -75,10 +86,7 @@ async function createHTMLFile(filename) {
 
   const html = `
 <div class="post">
-  <div class="header">
-    <a href="${link}">
-      <time>${new Date(pubDate).toUTCString()}</time>
-    </a>
+  <div class="meta">
     ${Object.entries(rest).map(([key, value]) => {
       return `<meta ${key}="${value}">`;
     })}
@@ -86,6 +94,9 @@ async function createHTMLFile(filename) {
   <div class="body">
     ${post.trim()}   
   </div>
+  <a href="${link}" class="timestamp">
+    <time>${new Date(pubDate).toUTCString()}</time>
+  </a>
 </div>
 `;
 
@@ -111,7 +122,7 @@ function createFeed(items) {
 function createPostsPage(posts) {
   writeFileAsync(
     "./notes/index.html",
-    htmlTemplate(posts.reverse().join("\n")),
+    htmlTemplate("<h1>📝 Notes</h1>" + posts.reverse().join("\n")),
     "utf8"
   );
 }
