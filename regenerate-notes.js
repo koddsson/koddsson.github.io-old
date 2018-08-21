@@ -42,7 +42,7 @@ async function createRSSFile(filename) {
 
   const rss = `
 <item>
-  <description>${post}</description>
+  <description>${post.trim()}</description>
   <pubDate>${new Date(pubDate).toUTCString()}</pubDate>
   <link>https://koddsson.com/notes/${isoDate}.html</link>
   <guid isPermaLink="true">

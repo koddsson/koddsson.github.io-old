@@ -4,13 +4,10 @@
   <description>notes</description>
   <link>https://koddsson.com</link>
   <atom:link href="https://koddsson.com/notes/feed.xml" rel="self" type="application/rss+xml"/>
-  <lastBuildDate>Tue, 21 Aug 2018 16:29:22 GMT</lastBuildDate>
+  <lastBuildDate>Tue, 21 Aug 2018 16:54:47 GMT</lastBuildDate>
     
 <item>
-  <description>
-
-I'm testing my RSS feed!
-</description>
+  <description>I'm testing my RSS feed!</description>
   <pubDate>Sun, 12 Aug 2018 15:03:52 GMT</pubDate>
   <link>https://koddsson.com/notes/2018-08-12.html</link>
   <guid isPermaLink="true">
@@ -20,10 +17,7 @@ I'm testing my RSS feed!
 
 
 <item>
-  <description>
-
-I'm testing my RSS feed from the future!
-</description>
+  <description>I'm testing my RSS feed from the future!</description>
   <pubDate>Mon, 13 Aug 2018 15:03:52 GMT</pubDate>
   <link>https://koddsson.com/notes/2018-08-13.html</link>
   <guid isPermaLink="true">
