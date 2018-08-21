@@ -109,7 +109,11 @@ function createFeed(items) {
 }
 
 function createPostsPage(posts) {
-  writeFileAsync("./notes/index.html", htmlTemplate(posts.join("\n")), "utf8");
+  writeFileAsync(
+    "./notes/index.html",
+    htmlTemplate(posts.reverse().join("\n")),
+    "utf8"
+  );
 }
 
 (async function() {
