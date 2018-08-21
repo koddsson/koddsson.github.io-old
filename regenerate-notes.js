@@ -6,7 +6,11 @@ const writeFileAsync = promisify(writeFile);
 
 function htmlTemplate(content) {
   const page = `<html>
-  <head></head>
+  <head>
+    <style>
+      .body { margin-bottom: 0.83em; }
+    </style>
+  </head>
   <body>
     ${content}
   </body>
@@ -33,12 +37,11 @@ async function createRSSFile(filename) {
       return obj;
     }, {});
 
-  const { title, pubDate, ...rest } = metadata;
+  const { pubDate, ...rest } = metadata;
   const isoDate = pubDate.split("T")[0];
 
   const rss = `
 <item>
-  <title>${title}</title>
   <description>${post}</description>
   <pubDate>${new Date(pubDate).toUTCString()}</pubDate>
   <link>https://koddsson.com/notes/${isoDate}.html</link>
@@ -63,7 +66,7 @@ async function createHTMLFile(filename) {
       return obj;
     }, {});
 
-  const { title, pubDate, ...rest } = metadata;
+  const { pubDate, ...rest } = metadata;
   const isoDate = pubDate.split("T")[0];
   const link = filename
     .replace(".md", ".html")
@@ -73,10 +76,9 @@ async function createHTMLFile(filename) {
   const html = `
 <div class="post">
   <div class="header">
-    <h2 class="title">
-      <a href="${link}">${title}</a>
-    </h2>
-    <time>${new Date(pubDate).toUTCString()}</time>
+    <a href="${link}">
+      <time>${new Date(pubDate).toUTCString()}</time>
+    </a>
     ${Object.entries(rest).map(([key, value]) => {
       return `<meta ${key}="${value}">`;
     })}
@@ -107,14 +109,7 @@ function createFeed(items) {
 }
 
 function createPostsPage(posts) {
-  const page = `<html>
-  <head></head>
-  <body>
-    ${posts.join("\n")}
-  </body>
-</html>
-`;
-  writeFileAsync("./notes/index.html", page, "utf8");
+  writeFileAsync("./notes/index.html", htmlTemplate(posts.join("\n")), "utf8");
 }
 
 (async function() {
