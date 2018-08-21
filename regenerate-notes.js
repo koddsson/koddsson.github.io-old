@@ -65,14 +65,22 @@ async function createHTMLFile(filename) {
 
   const { title, pubDate, ...rest } = metadata;
   const isoDate = pubDate.split("T")[0];
+  const link = filename
+    .replace(".md", ".html")
+    .split("/")
+    .pop();
 
   const html = `
 <div class="post">
-  <h3>${title}</h3>
-  <time>${new Date(pubDate).toUTCString()}</time>
-  ${Object.entries(rest).map(([key, value]) => {
-    return `<meta ${key}="${value}">`;
-  })}
+  <div class="header">
+    <h2 class="title">
+      <a href="${link}">${title}</a>
+    </h2>
+    <time>${new Date(pubDate).toUTCString()}</time>
+    ${Object.entries(rest).map(([key, value]) => {
+      return `<meta ${key}="${value}">`;
+    })}
+  </div>
   <div class="body">
     ${post.trim()}   
   </div>
