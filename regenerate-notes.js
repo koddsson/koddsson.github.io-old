@@ -100,7 +100,7 @@ async function createHTMLFile(filename) {
 </div>
 `;
 
-  await writeFileAsync(`./notes/${isoDate}.html`, htmlTemplate(html));
+  await writeFileAsync(`./notes/${link}`, htmlTemplate(html));
   return html;
 }
 
