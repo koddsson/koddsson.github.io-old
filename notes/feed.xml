@@ -4,7 +4,7 @@
   <description>notes</description>
   <link>https://koddsson.com</link>
   <atom:link href="https://koddsson.com/notes/feed.xml" rel="self" type="application/rss+xml"/>
-  <lastBuildDate>Wed, 22 Aug 2018 10:40:12 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 22 Aug 2018 12:22:33 GMT</lastBuildDate>
     
 <item>
   <description>I'm testing my RSS feed!</description>
@@ -32,6 +32,18 @@
   <link>https://koddsson.com/notes/2018-08-21.html</link>
   <guid isPermaLink="true">
     https://koddsson.com/notes/2018-08-21.html
+  </guid>
+</item>
+
+
+<item>
+  <description>🎉 1 WHOLE YEAR AT GITHUB TODAY 🎉
+
+I'm really enjoying working with the awesome people I work with every day.</description>
+  <pubDate>Wed, 22 Aug 2018 12:21:37 GMT</pubDate>
+  <link>https://koddsson.com/notes/2018-08-22.html</link>
+  <guid isPermaLink="true">
+    https://koddsson.com/notes/2018-08-22.html
   </guid>
 </item>
 
