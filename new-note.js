@@ -10,8 +10,8 @@ const spawnSync = (cmd, args, options) => {
 
 const date = new Date();
 const baseFilename = `./notes/${date.toISOString().split("T")[0]}`;
-let filename = baseFilename;
 let counter = 0;
+let filename = `${baseFilename}-${counter}`;
 
 while (fs.existsSync(`${filename}.md`)) {
   filename = `${baseFilename}-${counter}`;
