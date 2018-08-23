@@ -11,21 +11,9 @@ function htmlTemplate(content) {
     <link rel="icon" data-emoji="📝" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="/scripts/emoji-favicon.js"></script>
-    <style>
-      @import url('https://fonts.googleapis.com/css?family=Fira+Sans');
-      body { font-family: 'Fira Sans', sans-serif; }
-      .body { margin-bottom: 0.83em; }
-      .timestamp { text-align: right; }
-      .post {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 0.83em;
-        padding: 0.83em;
-        border: 1px solid gray;
-      }
-    </style>
+    <link rel="stylesheet" href="/index.css">
   </head>
-  <body>
+  <body style="padding: 1em">
     ${content}
   </body>
 </html>
@@ -97,7 +85,7 @@ async function createHTMLFile(filename) {
   <div class="body">
     ${post.trim()}   
   </div>
-  <a href="${link}" class="timestamp">
+  <a href="/notes/${link}" class="timestamp">
     <time>${new Date(pubDate).toUTCString()}</time>
   </a>
 </div>
@@ -125,7 +113,16 @@ function createFeed(items) {
 function createPostsPage(posts) {
   writeFileAsync(
     "./notes/index.html",
-    htmlTemplate("<h1>📝 Notes</h1>" + posts.reverse().join("\n")),
+    htmlTemplate("<h1>📝 Notes</h1>" + posts.join("\n")),
+    "utf8"
+  );
+}
+
+async function addToIndex(posts) {
+  const index = await readFileAsync("./index-template.html", "utf8");
+  writeFileAsync(
+    "./index.html",
+    index.replace("$$NOTES_GO_HERE$$", posts.slice(0, 5).join("\n")),
     "utf8"
   );
 }
@@ -146,6 +143,9 @@ function createPostsPage(posts) {
     rsss.push(rss);
   }
 
+  htmls.reverse();
+
   createPostsPage(htmls);
   createFeed(rsss);
+  await addToIndex(htmls);
 })();
