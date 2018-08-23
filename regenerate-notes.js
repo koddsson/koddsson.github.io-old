@@ -7,6 +7,7 @@ const writeFileAsync = promisify(writeFile);
 function htmlTemplate(content) {
   const page = `<html>
   <head>
+    <title>Notes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
       @import url('https://fonts.googleapis.com/css?family=Fira+Sans');
