@@ -26,11 +26,9 @@ pubDate: ${date.toISOString()}
 fs.writeFileSync(`${filename}.md`, template);
 
 (async function() {
-  await spawnSync("git", ["stash"], { stdio: "inherit" });
   await spawnSync("nvim", [`${filename}.md`], { stdio: "inherit" });
   await spawnSync("node", ["regenerate-notes.js"], { stdio: "inherit" });
   await spawnSync("git", ["add", "."], { stdio: "inherit" });
   await spawnSync("git", ["commit", "-m", "🐦 chrip 🦗"], { stdio: "inherit" });
-  await spawnSync("git", ["stash", "pop"], { stdio: "inherit" });
   await spawnSync("git", ["--no-pager", "show"], { stdio: "inherit" });
 })();
