@@ -8,7 +8,9 @@ function htmlTemplate(content) {
   const page = `<html>
   <head>
     <title>Notes</title>
+    <link rel="icon" data-emoji="📝" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/scripts/emoji-favicon.js"></script>
     <style>
       @import url('https://fonts.googleapis.com/css?family=Fira+Sans');
       body { font-family: 'Fira Sans', sans-serif; }
