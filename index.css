@@ -60,14 +60,6 @@ body {
   padding-top: 1.5em;
 }
 
-.badge {
-  text-transform: uppercase;
-  color: white;
-  background-color: #0366d6;
-  padding: 2px 4px;
-  border-radius: 2px;
-}
-
 .content {
   width: 100%;
   padding: 0 1em;
